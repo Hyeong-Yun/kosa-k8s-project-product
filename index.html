@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+  }
+body
+{
+    width: 100%;
+  background-color: #fff;
+  font-family: Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.product_img{
+  max-width: 580px;
+  
+}
+
+.product_img img{
+  width: 100%;
+  border-radius: 20px 20px;
+}
+
+
+.product_info{
+  width: 260px;
+  text-align: justify;
+}
+
+.product_title{
+  font-size: 1.6em; 
+  color: #233F59;
+  padding: 10px;
+}
+.product_model{
+  padding: 10px;
+  color: #878686;
+  font-size: .8rem;
+  
+}
+.product_price{
+  padding: 10px;
+  color: #615F5F;
+  font-size: 1.8rem;
+}
+.product_descr{
+  color: #615F5F;
+  padding: 10px;
+}
+.product_color{
+  color: #878686;
+  padding: 10px;
+}
+
+.add_to_cart{
+  width: 100%;
+  padding: 12px 0;
+  background-color: #BF9860;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.add_to_cart:hover{
+  background-color: #d8b88a;
+  
+}
+.product_quantity {
+color: #878686;
+padding: 10px;}
+
+.product_quantity input[type="number"]{
+  border: 1px solid lightgray;
+  width: 80px;
+  font-size: 1.8em;
+  margin: 10px 0;
+  padding: 5px;
+  text-align:center;
+  color: #878686;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 640px)
+{
+    .product_info{
+    width: 100%;
+    text-align: center;
+   }
+}
+
+.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 60px 0px;
+    height: 600px;
+}
+
+
+.grid-wrapper{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.grid-wrapper .column-xs-12{
+    width: 22%;
+    height: 250px;
+}
+
+.h3-container p{
+    padding: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000;
+}
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900|Open+Sans:400,600');
+ * {
+	 box-sizing: border-box;
+}
+ *::before, *::after {
+	 box-sizing: border-box;
+}
+html {
+  width: 100%;
+}
+ body {
+	 font-family: 'Open Sans', sans-serif;
+   width: 100%;
+	 font-size: 1rem;
+	 font-weight: 400;
+	 line-height: 1.6;
+	 margin: 0;
+	 padding: 0;
+	 color: #686574;
+	 background: #fff;
+	 text-rendering: optimizeLegibility;
+}
+ h1, h2, h3 {
+	 font-family: 'Nunito', sans-serif;
+	 line-height: 1.1;
+	 color: #322e40;
+}
+ h1 {
+	 position: relative;
+	 margin: 0 0 1rem;
+	 font-size: 3.125rem;
+	 font-weight: 700;
+	 color: #322e40;
+}
+ h2 {
+	 font-size: 2.5rem;
+	 margin: 1rem 0 1.5rem;
+	 font-weight: 700;
+}
+ h3 {
+	 font-size: 1.75rem;
+	 margin: 1.5rem 0 0.75rem;
+	 font-weight: 600;
+}
+ p {
+	 margin: 0 0 1.5rem;
+}
+ p.lead {
+	 font-size: 1.125rem;
+	 margin: 0 0 2rem;
+}
+ a {
+	 transition: color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	 color: inherit;
+	 text-decoration: none;
+}
+ ul {
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+}
+ ul li {
+	 margin: 0 1.5rem 0 0;
+}
+ header {
+	 padding: 15rem 0 10rem;
+}
+
+ nav {
+	 z-index: 1;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 padding: 1.5rem 0;
+	 width: 100%;
+	 background: #fff;
+	 box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
+   display: flex;
+  }
+
+ nav ul {
+	 display: flex;
+	 justify-content: flex-start;
+	 margin: 0.25rem 0;
+}
+ nav ul li {
+	 font-size: 0.875rem;
+	 font-weight: 600;
+	 line-height: 1.375rem;
+	 margin: 0 1.5rem 0 0;
+}
+
+ nav ul a {
+	 color: #999;
+}
+ nav ul a:hover {
+	 color: #322e40;
+}
+ nav ul {
+	 position: absolute;
+	 z-index: 1;
+	 list-style: none;
+	 display: flex;
+	 flex-wrap: wrap;
+	 flex-direction: column;
+	 display: none;
+	 width: 100%;
+	 left: 0;
+	 padding: 1rem 0 1.5rem;
+	 background: #fff;
+	 text-align: center;
+}
+ nav ul.active {
+	 display: flex;
+}
+ nav ul li {
+	 margin: 0.5rem 0;
+}
+ .toggle-btn {
+	 display: flex;
+	 justify-content: flex-end;
+}
+ .toggle-nav {
+	 font-size: 0.875rem;
+	 font-weight: 600;
+	 margin: 0.325rem 0;
+	 color: #999;
+}
+ .toggle-nav .fa-bars {
+	 margin: 0 0 0 0.5rem;
+}
+ .toggle-nav i {
+	 font-size: 1.5rem;
+	 line-height: 0.5;
+	 margin: 0 0 0 0.5rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+ nav .grid > [class*="column-"] {
+	 padding: 0 1rem;
+}
+ #logo {
+	 font-family: 'Nunito', sans-serif;
+	 font-weight: 600;
+	 font-size: 1.25rem;
+	 margin: 0;
+	 color: #322e40;
+}
+ .container {
+	 max-width: 100%;
+}
+ header section {
+	 padding: 0;
+}
+ main::before {
+	 position: absolute;
+	 content: '';
+	 left: 0;
+	 display: block;
+	 width: 100%;
+	 height: 5rem;
+	 
+	 background-size: 100% 100%;
+	 background-position: center bottom;
+	 background-repeat: no-repeat;
+}
+ .grid > [class*="column-"] {
+	 padding: 1rem;
+}
+ section {
+	 padding: 5rem 0;
+}
+
+.products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products .new-arrivals {
+  display: flex;
+  width:80%;
+  justify-content: space-around;
+}
+
+ img {
+	 display: block;
+	 width: 100%;
+	 height: 100%;
+	 object-fit: cover;
+}
+ .btn {
+	 transition: background 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	 position: relative;
+	 display: inline-block;
+	 color: #fff;
+	 border: none;
+	 border-radius: 2rem;
+	 outline: 0;
+	 padding: 1.125rem 3rem;
+	 font-family: inherit;
+	 font-size: 0.875rem;
+	 font-weight: 700;
+	 text-align: center;
+	 text-transform: uppercase;
+	 cursor: pointer;
+	 letter-spacing: 0.0625rem;
+	 background: #ff714c;
+}
+ .btn:hover {
+	 background: #ff5d33;
+}
+ .text-center {
+	 text-align: center;
+}
+
+.photos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+ figure {
+	 position: relative;
+	 display: block;
+	 margin: 0;
+}
+
+ figure > .img-container {
+	 height: 20rem;
+	 border-radius: 0.5rem;
+	 overflow: hidden;
+}
+
+ figure > .img-container img {
+	 transition: transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	 transform: scale(1);
+}
+
+ a:hover .img-container img {
+	 transform: scale(1.08);
+}
+ a:hover figcaption h3 {
+	 color: #ff714c;
+}
+ a figcaption > * {
+	 transition: color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+ footer {
+	 text-align: center;
+}
+ footer section {
+	 padding: 2rem 0;
+	 border-top: 1px solid #cfcfcf;
+}
+ footer .footer-nav li {
+	 display: inline-block;
+}
+ footer .footer-nav li a:hover {
+	 color: #ff714c;
+}
+ @media (min-width: 1000px) {
+	 nav {
+		 padding: 1.5rem 0;
+	}
+	 nav ul {
+		 justify-content: flex-end;
+	}
+}
+ @media (min-width: 1000px) {
+	 body {
+		 font-size: 1.125rem;
+	}
+	 header {
+		 background: #f8f4ed url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/toys.png) no-repeat center top/auto;
+	}
+	 h1 {
+		 font-size: 3.5rem;
+		 margin: 0 0 1.5rem;
+	}
+	 h2 {
+		 font-size: 2.75rem;
+	}
+	 h3 {
+		 font-size: 1.85rem;
+	}
+	 p.lead {
+		 font-size: 1.25rem;
+		 margin: 0 0 2.5rem;
+	}
+	 .toggle-nav {
+		 display: none;
+	}
+	 nav {
+		 display: block;
+	}
+	 nav ul {
+		 display: flex;
+		 flex-direction: row;
+		 position: relative;
+		 justify-content: flex-end;
+		 padding: 0;
+	}
+	 nav ul li {
+		 margin: 0 1.5rem 0 0;
+	}
+}
+
+    </style>
+    <!-- <link rel="stylesheet"  type="text/css" href="./detail.css">
+    <link rel="stylesheet"  type="text/css" href="./style.css"> -->
+</head>
+<body>
+    <nav>
+        <div class="container">
+          <div class="grid">
+            <div class="column-xs-6 column-sm-3">
+              <p id="logo">Hello Toys</p>
+            </div>
+            <div class="column-xs-6 column-sm-9 nav-list-container">
+              <div class="toggle-btn">
+                <a href="#" class="toggle-nav">Menu <i class="fas fa-bars fa-lg"></i></a>
+              </div>
+              <ul class="nav-list">
+                
+                <li class="nav-item"><a href="#">Shop</a></li>
+                <li class="nav-item"><a href="#">About</a></li>        
+                <li class="nav-item" id = "loginText"><a href="./login.html">Login</a></li>
+                <li class="nav-item"><a href="#">Cart (0)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="body">
+        <div class="product_img">
+          <img src="https://contents.sixshop.com/thumbnails/uploadedFiles/56465/product/image_1686551862380_1000.jpg" alt="">
+        </div>
+        <div class="product_info">
+          <div class="seller_info">
+            
+          </div>
+          <div class="product_title">I'm product</div>
+          <div class="product_model">SKU: 21354654
+        </div>
+          <div class="product_price">$230.00
+        </div>
+          <div class="product_descr">I'm a product description. I'm a great place to add more details about your product such as sizing, material, care </div>
+          <div class="product_color">Color: Black</div>
+          <div class="product_color">someone@something.com</div>
+          <div class="product_color">+92 308 1234567</div>
+          <div class="product_quantity">Quantity:<br> 
+            <input type="number">
+          </div>
+          <div class="add_to_cart">Add to cart</div>
+        </div>
+        </div>
+        
+          <div class="grid-container related-products">
+            <div class="column-xs-12 h3-container">
+              <p>추천 상품</p>
+            </div>
+            <div class = "grid-wrapper">
+            <div class="column-xs-12 column-md-4">
+              <img src="https://source.unsplash.com/miziNqvJx5M">
+              <h4>Succulent</h4>
+              <p class="price">$19.99</p>
+            </div>
+            <div class="column-xs-12 column-md-4">
+              <img src="https://source.unsplash.com/2y6s0qKdGZg">
+              <h4>Terranium</h4>
+              <p class="price">$19.99</p>
+            </div>
+            <div class="column-xs-12 column-md-4">
+              <img src="https://source.unsplash.com/6Rs76hNbIWE">
+              <h4>Cactus</h4>
+              <p class="price">$19.99</p>
+            </div>
+          </div>
+        </div>
+    </div>
+      </main>
+</body>
+</html>
